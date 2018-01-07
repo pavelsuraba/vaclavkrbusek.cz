@@ -1,0 +1,10 @@
+.next/
+node_modules/
+.env
+.env.*
+!.env.default
+jsconfig.json
+
+.DS_Store
+.idea/
+/dump.rdb

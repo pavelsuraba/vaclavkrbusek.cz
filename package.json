@@ -1,0 +1,37 @@
+{
+    "name": "vaclavkrbusek",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
+    "scripts": {
+        "dev": "NODE_ENV=development node backend/server.js",
+        "build": "next build frontend",
+        "export": "del output/* && next export frontend -o output",
+        "start": "NODE_ENV=production node backend/server.js",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "author": "Pavel Šuraba",
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^4.0.0",
+        "express": "^4.16.2",
+        "lodash.debounce": "^4.0.8",
+        "lodash.throttle": "^4.1.1",
+        "next": "^4.2.1",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "styled-components": "^2.4.0"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.0.1",
+        "babel-plugin-inline-dotenv": "^1.1.1",
+        "babel-plugin-inline-react-svg": "^0.5.2",
+        "babel-plugin-module-resolver": "^2.7.1",
+        "babel-plugin-styled-components": "^1.2.1",
+        "del-cli": "^1.1.0",
+        "eslint": "^4.8.0",
+        "eslint-loader": "^1.9.0",
+        "eslint-plugin-react": "^7.4.0"
+    }
+}

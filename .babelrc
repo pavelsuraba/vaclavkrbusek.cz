@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    ["module-resolver", { "root": ["./frontend"] }],
+    "inline-react-svg",
+    "inline-dotenv"
+  ],
+
+  "env": {
+    "development": {
+      "plugins": [
+        ["styled-components", { "ssr": true, "displayName": true, "preprocess": false } ]
+      ]
+    },
+    "production": {
+      "plugins": [
+        ["styled-components", { "ssr": true, "displayName": false, "preprocess": false } ]
+      ]
+    }
+  }
+}
