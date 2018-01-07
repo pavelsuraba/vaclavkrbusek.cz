@@ -1,4 +1,5 @@
 # Václav Krbůšek - portfolio
+next.js + styled-components
 https://www.vaclavkrbusek.cz
 
 ### Installation
